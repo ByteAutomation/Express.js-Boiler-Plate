@@ -75,7 +75,7 @@ Send request with required parametres [Success Code: 200]
 
 ### 📋 TODO
 
-- [ ] Add more documentation
-- [ ] Add Test support
-- [ ] Convert to ES6
-- [ ] Github Action Support
+- [ ]  Add more documentation
+- [ ]  Add Test support
+- [ ]  Convert to ES6
+- [ ]  Github Action Support
