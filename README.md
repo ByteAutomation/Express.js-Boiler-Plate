@@ -37,7 +37,7 @@ docker pull vasuratanpara/express-js-microservice-boiler-plate:latest
 ```bash
 http://localhost:<port>/hello-world
 ```
-- Success Code: 200
+Success Code: 200
 ```json
 {
     "success": true,
@@ -48,14 +48,14 @@ http://localhost:<port>/hello-world
 ```bash
 http://localhost:<port>/hello-world
 ```
--  Send this JSON as raw data (as JSON)
+Send this JSON as raw data (as JSON)
 ```json
 {
     "param_1":"This is a test",
     "param_2":"This is a demo"
 }
 ```
--  Send request without required parametres [Error Code: 422]
+Send request without required parametres [Error Code: 422]
 ```json
 {
     "success": false,
@@ -65,7 +65,7 @@ http://localhost:<port>/hello-world
     ]
 }
 ```
--  Send request with required parametres [Success Code: 200]
+Send request with required parametres [Success Code: 200]
 ```json
 {
     "success": true,
