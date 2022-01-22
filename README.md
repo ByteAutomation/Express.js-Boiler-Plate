@@ -27,8 +27,55 @@ Create a .env as mentioned above in the root folder.
 node app.js
 ```
 
+### 🐳 Run in Docker
+```bash
+# https://hub.docker.com/r/vasuratanpara/express-js-microservice-boiler-plate
+docker pull vasuratanpara/express-js-microservice-boiler-plate:latest
+```
+### ⬅️ GET Request
+
+```bash
+http://localhost:<port>/hello-world
+```
+- Success Code: 200
+```json
+{
+    "success": true,
+    "message": "Welcome to Hello!"
+}
+```
+### ➡️ POST Request
+```bash
+http://localhost:<port>/hello-world
+```
+-  Send this JSON as raw data (as JSON)
+```json
+{
+    "param_1":"This is a test",
+    "param_2":"This is a demo"
+}
+```
+-  Send request without required parametres [Error Code: 422]
+```json
+{
+    "success": false,
+    "message": [
+        "The param 1 field is mandatory.",
+        "The param 2 field is mandatory."
+    ]
+}
+```
+-  Send request with required parametres [Success Code: 200]
+```json
+{
+    "success": true,
+    "message": "Welcome to Hello POST!"
+}
+```
+
 ### 📋 TODO
 
 - [ ] Add more documentation
 - [ ] Add Test support
 - [ ] Convert to ES6
+- [ ] Github Action Support
